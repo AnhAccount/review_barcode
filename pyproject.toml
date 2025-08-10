@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "barcode_review"
+version = "0.0.1"
+description = "A simple project to create barcodes for URLs."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "qrcode[pil]",
+]
