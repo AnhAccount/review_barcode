@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review & Win</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/Restaurant_Ngon_HCM_Distric1_top.jpg" alt="Restaurant View" class="header-image">
+        <h1>Leave a Review!</h1>
+        <p>Your feedback is important to us. Please leave a review on our Google page.</p>
+        <a href="https://www.google.com/search?gs_ssp=eJzj4tZP1zcsqawqzzCzNGC0UjWoMDY0NzVKM7FIsbBINk5JNLYyqEhKMUgyS01NMrAwTTY1MUr24s9Lz89TKEotLkksLUrMKwEAuqsVPQ&q=ngon+restaurant&rlz=1C1YTUH_en-GBAU1071AU1071&oq=ngon+res&gs_lcrp=EgZjaHJvbWUqFQgBEC4YJxivARjHARiABBiKBRiOBTIGCAAQRRg5MhUIARAuGCcYrwEYxwEYgAQYigUYjgUyBwgCEAAYgAQyDQgDEC4YrwEYxwEYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgATSAQg0NTg5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x31752f48d88c3da3:0xbd0b6eeb085c542c,3,,,," target="_blank" class="button">Write a Review on Google</a>
+        <button id="reviewedBtn" class="button">I've Already Reviewed</button>
+        
+        <div id="wheel-container" class="hidden">
+            <h2>Spin to Win!</h2>
+            <div class="wheel-wrapper">
+                <div class="arrow"></div>
+                <canvas id="wheel" width="300" height="300"></canvas>
+            </div>
+            <button id="spinBtn" class="button">Spin</button>
+        </div>
+        
+        <div id="result" class="hidden">
+            <h2>Congratulations!</h2>
+            <p>You've won: <span id="prize"></span></p>
+            <p>Please show this screen to our staff to claim your prize.</p>
+        </div>
+        <img src="images/Restaurant_Ngon_HCM_Distric1_bottom.jpeg" alt="Restaurant Food" class="footer-image">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
